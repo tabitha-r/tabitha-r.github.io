@@ -1,0 +1,11 @@
+.theme__light {
+    --background: white;
+    --font-colour: black;
+    --monitor-shadow: grey;
+}
+
+.theme__dark {
+    --background: black;
+    --font-colour: white;
+    --monitor-shadow: #0e0e0e;
+}

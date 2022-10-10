@@ -1,0 +1,21 @@
+.skip-to-content-link {
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-300%);
+    transition: transform 0.3s;
+    font-family: Oxygen;
+    font-weight: 300;
+  
+    &:focus {
+        transform: translateY(0%);
+    }
+}
+
+#colour-scheme-button {
+    &:hover {
+        cursor: pointer;
+    }
+}

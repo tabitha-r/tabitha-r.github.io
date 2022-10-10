@@ -1,0 +1,22 @@
+{
+  "name": "portfoliov3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "style": "postcss ./src/css/index.css -o ./src/style.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "postcss-spiffing": "^0.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
