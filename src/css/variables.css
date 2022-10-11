@@ -1,11 +1,79 @@
 .theme__light {
     --background: white;
     --font-colour: black;
-    --monitor-shadow: grey;
+    --monitor-shadow: hsl(231, 18%, 36%);
+
+    --contrast-light: hsl(50, 84%, 62%);
+    --contrast-mid: hsl(50, 100%, 47%);
+    --contrast-dark: hsl(40, 81%, 49%);
+
+    --app-secondary-contrast: hsl(180, 100%, 25%);
+    --app-secondary-transparency: hsla(180, 100%, 25%, 0.4);
+
+    --browser-bg: hsl(218, 15%, 89%);
+    --browser-tab: hsl(0, 0%, 100%);
+    --browser-input: hsl(210, 14%, 95%);
+    --browser-menu: hsl(0, 0%, 100%);
+    --browser-font: hsl(220, 2%, 6%);
+    --browser-shadow: hsl(0, 0%, 63%);
+    --browser-highlight: hsl(204, 8%, 87%);
+
+    --app-bg: hsl(210, 10%, 88%);
+    --app-fg1: hsl(220, 13%, 95%);
+    --app-fg2: hsl(0, 0%, 100%);
+    --app-fg3: hsl(210, 11%, 93%);
+    --app-highlight: hsl(210, 9%, 91%);
+    --app-font-primary: hsl(240, 3%, 7%);
+    --app-font-secondary: hsl(212, 7%, 53%);
+    --app-shadow: hsl(240, 8%, 60%);
+
+    --browser-green-button: hsl(112, 67%, 54%);
+    --browser-amber-button: hsl(44, 95%, 61%);
+    --browser-red-button: hsl(3, 97%, 67%);
+
+    --title-border: hsl(216, 7%, 14%);
 }
 
 .theme__dark {
     --background: black;
     --font-colour: white;
-    --monitor-shadow: #0e0e0e;
+    --monitor-shadow: hsl(233, 17%, 9%);
+
+    --contrast-light: hsl(50, 100%, 76%);
+    --contrast-mid: hsl(50, 100%, 60%);
+    --contrast-dark: hsl(40, 100%, 50%);
+
+    --app-secondary-contrast: hsl(180, 100%, 30%);
+    --app-secondary-transparency: hsla(180, 100%, 30%, 0.4);
+
+    --browser-bg: hsl(0, 0%, 6%);
+    --browser-tab: hsl(0, 0%, 19%);
+    --browser-input: hsl(0, 0%, 13%);
+    --browser-menu: hsl(0, 0%, 15%);
+    --browser-font: hsl(210, 1%, 84%);
+    --browser-shadow: hsl(240, 7%, 9%);
+    --browser-highlight: hsl(0, 0%, 31%);
+
+    --app-bg: hsl(216, 7%, 14%);
+    --app-fg1: hsl(223, 7%, 20%);
+    --app-fg2: hsl(220, 8%, 23%);
+    --app-fg3: hsl(220, 7%, 17%);
+    --app-highlight: hsl(218, 8%, 27%);
+    --app-font-primary: hsl(0, 0%, 95%);
+    --app-font-secondary: hsl(223, 3%, 57%);
+    --app-shadow: hsl(240, 20%, 1%);
+
+    --browser-green-button: hsl(105, 76%, 48%);
+    --browser-amber-button: hsl(47, 84%, 51%);
+    --browser-red-button: hsl(359, 91%, 59%);
+
+    --title-border: hsl(40, 100%, 50%);
+}
+
+:root {
+    --heading-font: Oxygen;
+    --body-font: 'Source Sans Pro';
+    --default-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    --monitor: #d3cfca;
 }

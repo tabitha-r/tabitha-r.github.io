@@ -1,13 +1,21 @@
 html {
-    scroll-behaviour: smooth;
     font-size: 18px;
+}
+
+::selection {
+    color: #1e1e1e;
+    background-color: var(--contrast-dark);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-colour: #f6f6f6;
     overflow: hidden;
+    font-family: var(--body-font), var(--default-fallback);
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font), var(--default-fallback);
+    }
 
     &.theme__light {
         background-image: linear-gradient(#ff7300, #ffc15a);
@@ -20,31 +28,124 @@ body {
     &>#monitor {
         width: 95vw;
         height: 85vh;
-        border: 25px solid lightgrey;
+        border: 25px solid var(--monitor);
         border-radius: 15px;
         padding: 0;
         margin: 1rem 1rem 0 1rem;
         position: fixed;
         box-shadow: 4px 4px 10px var(--monitor-shadow);
+        background-color: var(--app-bg);
+
+
     }
 
     &>#monitor-stand {
-        background-image: linear-gradient(grey, lightgrey 50%);
+        background-image: linear-gradient(grey, var(--monitor) 50%);
         width: 300px;
         height: 80px;
         z-index: -1;
         margin: 0 42%;
         position: fixed;
         bottom: 0;
+        box-shadow: 4px 4px 10px var(--monitor-shadow);
     }
 }
 
-main {
-    background-colour: var(--background);
-    color: var(--font-colour);
-    transition: .2s ease;
-    margin: 0;
+
+#screen {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+main {
+    color: var(--browser-font);
+    transition: .2s ease;
+    margin: 0 0 0 5rem;
     overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 94%;
+    
+    &>section {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1570px) {
+    body {
+        &>#monitor {
+            margin: .5rem 5rem 0 .5rem;
+        }
+    }
+
+    #screen {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    body {
+        &>#monitor {
+            width: 94vw;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        &>#monitor {
+            width: 90vw;
+            height: 92vh;
+            margin: .5rem;
+        }
+    
+        &>#monitor-stand {
+            display: none;
+        }
+
+    }
+
+    main {
+        height: 87vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        &>#monitor {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            border: none;
+        }
+
+    }
+
+    .no-mobile-view {
+        display: none !important;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    main {
+        margin: 0;
+        height: 95%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .mobile-view {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    main {
+        height: 100%;
+    }
 }

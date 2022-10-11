@@ -1,0 +1,97 @@
+header {
+    padding: .4rem;
+    background-color: var(--browser-bg);
+
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+
+    border-bottom: 1px solid var(--browser-shadow);
+
+    &>svg:first-of-type {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: auto auto auto .2rem;
+        fill: var(--browser-bg);
+        filter: brightness(250%);
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    &>div:first-of-type {
+        background-color: var(--browser-input);
+        border-radius: 8px;
+        color: var(--browser-font);
+        width: 100%;
+        height: 1.8rem;
+        padding: 0 -5px;
+
+        grid-area: 1 / 2 / 2 / 3;
+
+        h1 {
+            text-transform: lowercase;
+            word-spacing: -3px;
+            font-weight: 400;
+        }
+        
+        span, h1, p {
+            font-size: .8rem;
+            display: inline-block;
+            line-height: 1px;
+            margin-top: .5rem;
+            font-family: var(--body-font), var(--default-fallback);
+        }
+
+        p {
+            margin-left: .8rem;
+        }
+    }
+
+    &>div:last-of-type {
+        padding: .2rem;
+        grid-area: 1 / 3 / 2 / 4;
+        text-align: right;
+        margin: auto 0 auto auto;
+
+        i:first-of-type {
+            color: var(--browser-green-button);
+        }
+
+        i:last-of-type {
+            color: var(--browser-red-button);
+        }
+
+        i {
+            color: var(--browser-amber-button);
+            margin-right: .2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        &>div:last-of-type {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        &>div:first-of-type {
+            text-align: center;
+
+            h1 {
+                text-transform: none;
+                word-spacing: 0;
+                font-family: var(--heading-font), var(--default-fallback);
+                margin: 0 .2rem 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header {
+        display: none;
+    }
+}

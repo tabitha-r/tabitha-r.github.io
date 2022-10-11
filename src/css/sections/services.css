@@ -1,0 +1,32 @@
+#services {
+    padding: 2rem;
+    background-image: url('/src/images/smartmockups_l94l5sgo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+}
+
+.service-box {
+    background-color: var(--app-fg2);
+    width: 20%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0px 0px 15px 15px;
+    border-top: 4px solid var(--contrast-dark);
+    box-shadow: 2px 2px 3px var(--app-shadow);
+    transform: scale(90%);
+    transition: .2s ease;
+
+    &:hover {
+        transform: scale(100%);
+    }
+}

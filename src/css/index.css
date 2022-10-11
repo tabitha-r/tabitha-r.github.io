@@ -2,3 +2,9 @@
 @import "./variables.css";
 @import "./default.css";
 @import "./nav.css";
+@import "./header.css";
+
+@import "./sections/home.css";
+@import "./sections/cta.css";
+@import "./sections/services.css";
+@import "./sections/about.css";
