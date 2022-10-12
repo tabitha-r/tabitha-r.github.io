@@ -1,6 +1,61 @@
 #main-cta {
     background-image: linear-gradient(0.25turn, var(--contrast-mid), var(--contrast-dark) 50%);
-    height: 20rem;
-    z-index: 5;
+    height: fit-content;
     box-shadow: 0px 0px 10px var(--app-shadow);
+    color: #fff;
+    padding: 2rem 1rem 4rem 1rem;
+
+    p {
+        font-size: 2.6rem;
+        max-width: 65%;
+        margin: .6rem;
+        letter-spacing: 2px;
+        filter: drop-shadow(0px 0px 1px var(--dark-shadow));
+        
+        &:last-of-type {
+            font-family: var(--heading-font), var(--default-fallback);
+            filter: drop-shadow(2px 2px 2px var(--dark-shadow));
+            font-size: 3.4rem;
+            font-weight: 700;
+            max-width: 80%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    a {
+        font-size: 2rem;
+        background-color: var(--app-fg1);
+        padding: 1rem 2rem;
+        margin: 10%;
+        border-radius: 15px;
+        max-width: 70%;
+        white-space: nowrap;
+        text-decoration: none;
+        font-weight: 400;
+        color: var(--app-font-primary);
+        box-shadow: 2px 2px 5px var(--dark-shadow);
+        transition: .2s ease;
+
+        span {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            background-color: var(--app-highlight);
+            span {
+                --fa-secondary-opacity: 1;
+                --fa-primary-color: var(--contrast-dark);
+            }
+        }
+    }
+}
+
+#minor-cta {
+    background-image: url('/src/images/smartmockups_l94m6olx.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 5px var(--dark-shadow);
+    height: 10rem;
 }

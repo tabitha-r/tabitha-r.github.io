@@ -3,8 +3,11 @@
 @import "./default.css";
 @import "./nav.css";
 @import "./header.css";
+@import "./animations.css";
 
 @import "./sections/home.css";
 @import "./sections/cta.css";
 @import "./sections/services.css";
 @import "./sections/about.css";
+@import "./sections/skills.css";
+@import "./sections/contact.css";

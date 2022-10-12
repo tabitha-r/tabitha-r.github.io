@@ -1,0 +1,17 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease, transform 1.6s ease;
+
+    &.from-left {
+        transform: translateX(-50%);
+    }
+
+    &.from-right {
+        transform: translateX(50%);
+    }
+
+    &.appear {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

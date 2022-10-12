@@ -22,7 +22,7 @@
     --app-fg1: hsl(220, 13%, 95%);
     --app-fg2: hsl(0, 0%, 100%);
     --app-fg3: hsl(210, 11%, 93%);
-    --app-highlight: hsl(210, 9%, 91%);
+    --app-highlight: hsl(210, 2%, 81%);
     --app-font-primary: hsl(240, 3%, 7%);
     --app-font-secondary: hsl(212, 7%, 53%);
     --app-shadow: hsl(240, 8%, 60%);
@@ -76,4 +76,5 @@
     --default-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     --monitor: #d3cfca;
+    --dark-shadow: hsl(240, 20%, 1%);
 }

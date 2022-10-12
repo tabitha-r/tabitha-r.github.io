@@ -67,6 +67,14 @@ header {
     }
 }
 
+footer {
+    margin-top: 2rem;
+    padding: 1.3rem 2.6rem;
+    text-align: right;
+    background-color: var(--contrast-dark);
+    color: #000;
+}
+
 @media only screen and (max-width: 850px) {
     header {
         &>div:last-of-type {

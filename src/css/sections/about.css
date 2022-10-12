@@ -1,4 +1,38 @@
 #about {
-    background-color: var(--app-fg1);
+    background-color: var(--app-fg2);
     box-shadow: 0px 0px 10px var(--app-shadow);
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+
+    img {
+        filter: drop-shadow(2px 2px 5px var(--app-shadow));
+        margin: .4rem 2% 0 -4.5rem;
+        max-height: 600px;
+        align-self: flex-end;
+    }
+
+    div {
+        padding: 1rem;
+        font-size: 1.2rem;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about {
+        flex-flow: column nowrap;
+
+        img {
+            height: 400px;
+            margin-right: 2rem;
+        }
+    }
 }

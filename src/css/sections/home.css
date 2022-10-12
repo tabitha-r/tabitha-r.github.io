@@ -4,8 +4,6 @@
     justify-content: center;
     padding: 5rem 5rem 5rem 2rem;
     height: 30rem;
-    position: relative;
-    z-index: -1;
 
     &>img {
         width: 20rem;
@@ -53,13 +51,40 @@
             animation-fill-mode: both;
         }
 
-        span:last-of-type {
+        span:nth-of-type(3) {
 
             animation-duration: 2.3s;
             animation-name: floatIn;
             animation-iteration-count: 1;
             animation-delay: 1s;
             animation-fill-mode: both;
+        }
+
+        span:last-of-type {
+            
+            animation-duration: 3s;
+            animation-name: floatIn;
+            animation-iteration-count: 1;
+            animation-delay: 3.5s;
+            animation-fill-mode: both;
+            
+            a {
+                font-size: 1.5rem;
+                background-color: var(--contrast-dark);
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                margin: 1rem;
+                box-shadow: 2px 2px 4px var(--app-shadow);
+                text-decoration: none;
+                color: var(--dark-shadow);
+                transition: .2s ease;
+
+                &:hover {
+                    background-color: var(--contrast-mid);
+                    cursor: pointer;
+                }
+            }
+
         }
     }
 }
@@ -100,7 +125,7 @@
         &:nth-of-type(1) {
             color: var(--contrast-dark);
 
-            animation-duration: 10s;
+            animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 8s;
@@ -110,7 +135,7 @@
         &:nth-of-type(2) {
             color: var(--app-font-secondary);
 
-            animation-duration: 12s;
+            animation-duration: 17s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 16s;
@@ -120,7 +145,7 @@
         &:nth-of-type(3) {
             color: var(--contrast-light);
 
-            animation-duration: 14s;
+            animation-duration: 19s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 2s;
@@ -130,7 +155,7 @@
         &:nth-of-type(4) {
             color: var(--app-font-primary);
 
-            animation-duration: 10s;
+            animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 10s;
@@ -140,7 +165,7 @@
         &:nth-of-type(5) {
             color: var(--app-font-secondary);
 
-            animation-duration: 16s;
+            animation-duration: 21s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 6s;
@@ -150,7 +175,7 @@
         &:nth-of-type(6) {
             color: var(--contrast-mid);
 
-            animation-duration: 12s;
+            animation-duration: 17s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 4s;
@@ -160,7 +185,7 @@
         &:nth-of-type(7) {
             color: var(--contrast-dark);
 
-            animation-duration: 10s;
+            animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 12s;
@@ -170,7 +195,7 @@
         &:nth-of-type(8) {
             color: var(--app-font-primary);
 
-            animation-duration: 12s;
+            animation-duration: 17s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 16s;
@@ -180,7 +205,7 @@
         &:nth-of-type(9) {
             color: var(--app-font-secondary);
 
-            animation-duration: 14s;
+            animation-duration: 19s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
             animation-delay: 8s;
@@ -251,6 +276,12 @@
                 font-size: 4rem;
                 -webkit-text-stroke: 1px var(--title-border);
             }
+
+            span:last-of-type {
+                a{
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }
@@ -269,6 +300,13 @@
             span:nth-of-type(2) {
                 font-size: 3rem;
                 line-height: 2.5rem;
+            }
+
+            span:last-of-type {
+                margin-top: 1rem;
+                a {
+                    padding: .8rem 1rem;
+                }
             }
         }
     }
@@ -308,6 +346,10 @@
             span:nth-of-type(2) {
                 font-size: 2rem;
                 line-height: 1.6rem;
+            }
+
+            span:last-of-type {
+                display: none;
             }
         }
     }
