@@ -128,18 +128,18 @@
             animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 8s;
             animation-fill-mode: both;
+            animation-delay: 2s;
         }
 
         &:nth-of-type(2) {
             color: var(--app-font-secondary);
 
-            animation-duration: 17s;
+            animation-duration: 18s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 16s;
             animation-fill-mode: both;
+            animation-delay: 10s;
         }
 
         &:nth-of-type(3) {
@@ -148,8 +148,8 @@
             animation-duration: 19s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 2s;
             animation-fill-mode: both;
+            animation-delay: 6s;
         }
 
         &:nth-of-type(4) {
@@ -158,8 +158,8 @@
             animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 10s;
             animation-fill-mode: both;
+            animation-delay: 8s;
         }
 
         &:nth-of-type(5) {
@@ -168,8 +168,8 @@
             animation-duration: 21s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 6s;
             animation-fill-mode: both;
+            animation-delay: 1s;
         }
 
         &:nth-of-type(6) {
@@ -178,8 +178,8 @@
             animation-duration: 17s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 4s;
             animation-fill-mode: both;
+            animation-delay: 10s;
         }
 
         &:nth-of-type(7) {
@@ -188,8 +188,8 @@
             animation-duration: 15s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 12s;
             animation-fill-mode: both;
+            animation-delay: 3s;
         }
 
         &:nth-of-type(8) {
@@ -198,8 +198,8 @@
             animation-duration: 17s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 16s;
             animation-fill-mode: both;
+            animation-delay: 5s;
         }
 
         &:nth-of-type(9) {
@@ -208,8 +208,8 @@
             animation-duration: 19s;
             animation-name: floatUp;
             animation-iteration-count: infinite;
-            animation-delay: 8s;
             animation-fill-mode: both;
+            animation-delay: 7s;
         }
     }
 }
@@ -352,5 +352,11 @@
                 display: none;
             }
         }
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .animated-icons {
+        display: none;
     }
 }

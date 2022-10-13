@@ -87,6 +87,12 @@ main {
     }
 }
 
+@media (prefers-reduced-motion) {
+    main {
+        scroll-behavior: auto;
+    }
+}
+
 abbr {
     color: var(--app-font-secondary);
     text-decoration: none !important;

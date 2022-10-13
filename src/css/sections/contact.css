@@ -11,6 +11,7 @@
         padding: 1rem;
         border-radius: 15px;
         min-width: 200px;
+        width: 30vw;
         box-shadow: inset 0px 0px 4px var(--app-shadow);
 
         .form-input {
