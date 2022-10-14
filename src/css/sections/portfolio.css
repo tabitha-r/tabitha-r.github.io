@@ -1,0 +1,40 @@
+#portfolio {
+    text-align: center;
+    width: 97%;
+
+    &>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    .project {
+        width: 30%;
+        min-width: 300px;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: var(--app-fg1);
+        box-shadow: 2px 2px 4px var(--app-shadow);
+
+        .preview {
+            width: 100%;
+            height: auto;
+        }
+
+        div {
+            padding: 1rem;
+            text-align: left;
+            width: 80%;
+
+            h3 {
+                padding: 0;
+            }
+        }
+    }
+}
