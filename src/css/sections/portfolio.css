@@ -9,6 +9,11 @@
         flex-flow: row wrap;
     }
 
+    h2 {
+        font-size: 2.5rem;
+        margin: .5rem;
+    }
+
     .project {
         width: 30%;
         min-width: 300px;
@@ -28,12 +33,74 @@
         }
 
         div {
-            padding: 1rem;
+            padding: .2rem;
             text-align: left;
             width: 80%;
+            margin: 0;
 
             h3 {
-                padding: 0;
+                padding: 0 0 .4rem 0;
+                font-size: 1.6rem;
+                margin: 1rem auto .5rem auto;
+                border-bottom: 2px solid var(--app-font-secondary);
+            }
+
+            p:first-of-type {
+                margin: 0;
+                color: var(--app-font-secondary);
+            }
+
+            p:last-of-type {
+                text-align: center;
+                font-size: 1.2rem;
+                color: var(--app-font-secondary);
+                margin-bottom: 2rem;
+
+                abbr {
+                    color: var(--app-font-primary);
+                    font-size: 1.5rem;
+                    margin: .3rem;
+                }
+
+                img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    object-position: center;
+                }
+            }
+
+            .features {
+                background-color: var(--app-bg);
+                width: 80%;
+                margin: .6rem auto;
+                padding: .6rem 1rem;
+                border-radius: 15px;
+
+                h4 {
+                    margin: 0;
+                }
+                ul {
+                    margin: 0;
+                }
+            }
+
+            &>div:last-of-type {
+                text-align: center;
+                width: 50%;
+                margin: 1rem auto;
+                padding: 1rem;
+                background-color: var(--contrast-dark);
+                border-radius: 15px;
+                transition: .2s ease;
+                
+                a {
+                    color: var(--dark-shadow);
+                }
+
+                &:hover {
+                    background-color: var(--contrast-mid);
+                    cursor: pointer;
+                }
             }
         }
     }

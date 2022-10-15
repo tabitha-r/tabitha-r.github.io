@@ -179,3 +179,9 @@ abbr {
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+    main {
+        margin-left: 2rem;
+    }
+}

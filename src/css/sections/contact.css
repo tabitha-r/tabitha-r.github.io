@@ -10,6 +10,13 @@
     }
 
     p {
+        &:first-of-type {
+            font-size: 1.2rem;
+            background-color: transparent;
+            display: block;
+            max-width: 600px;
+        }
+
         font-size: 1.2rem;
         background-color: var(--app-fg3);
         width: fit-content;
