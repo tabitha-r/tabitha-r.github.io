@@ -17,6 +17,25 @@
             max-width: 600px;
         }
 
+        &:nth-of-type(2) {
+            width: 60%; 
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: .5rem;
+            background-color: #ebedef;
+            box-shadow: inset 0px 0px 3px var(--app-shadow);
+
+            img {
+                height: 3rem;
+                transition: .2s ease;
+
+                &:hover {
+                    transform: scale(120%);
+                }
+            }
+        }
+
         font-size: 1.2rem;
         background-color: var(--app-fg3);
         width: fit-content;
@@ -44,6 +63,7 @@
         min-width: 200px;
         width: 30vw;
         box-shadow: inset 0px 0px 4px var(--app-shadow);
+        margin: 0 auto;
 
         .form-input {
             display: flex;
