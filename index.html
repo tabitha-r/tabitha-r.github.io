@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Noto+Emoji&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="website, web developer, Lancashire, freelance developer, React, WordPress, TypeScript" />
     <meta name="description" content="North West England based freelance web developer, specialising in front-end development with additional full-stack development skills." />
     <meta name="author" content="Tabitha Riley" />
     <title>Tabitha Riley 💻 Web Developer</title>
     <script type="module" crossorigin src="./assets/index.074c070b.js"></script>
-    <link rel="stylesheet" href="./assets/index.10310b14.css">
+    <link rel="stylesheet" href="./assets/index.2ea7eb26.css">
   </head>
 
-  <body class="theme__light" id="body">
+  <body class="theme__light lang__en" id="body">
     <p class="skip-to-content-link">Skip to <a href="#main">content</a> or <a href="#nav">navigation</a></p>
 
     <div class="certificate-view closed"> 
@@ -46,33 +46,36 @@
       <div id="screen">
 
         <nav id="nav">
+          <a href="/ko.html" id="language-button" aria-label="Change site language to Korean. 사이트 언어를 한국어로 변경합니다." title="Change site language to Korean. 사이트 언어를 한국어로 변경합니다.">
+            <img src="./assets/kr.5a200121.png" alt="Change site language to Korean. 사이트 언어를 한국어로 변경합니다." />
+          </a>
 
-          <a href="#home" title="Home">
+          <a href="#home" title="Home" aria-label="Home">
             <i class="fa-duotone fa-house-chimney" ></i>
           </a>
 
-          <a href="#services" title="Services">
+          <a href="#services" title="Services" aria-label="Services">
             <i class="fa-duotone fa-browser"></i>
           </a>
 
-          <a href="#about" title="About Me">
+          <a href="#about" title="About Me" aria-label="About Me">
             <i class="fa-duotone fa-user-hair-long" ></i>
           </a>
           
-          <a href="#skills" title="Skills and Certifications">
+          <a href="#skills" title="Skills and Certifications" aria-label="Skills and Certifications">
             <i class="fa-duotone fa-graduation-cap" ></i>
           </a>
 
-          <a href="#portfolio" title="Portfolio">
+          <a href="#portfolio" title="Portfolio" aria-label="Portfolio">
             <i class="fa-duotone fa-notebook"></i>
           </a>
 
-          <a href="#contact" title="Contact Me">
+          <a href="#contact" title="Contact Me" aria-label="Contact Me">
             <i class="fa-duotone fa-paper-plane"></i>
           </a>
 
           <button id="colour-scheme-button" aria-label="Toggle between light and dark colour mode." title="Toggle Colour Mode">
-            <i id="toggle-scheme-icon" class="fa-duotone fa-moon-stars"></i>
+            <i id="toggle-scheme-icon" class="fa-duotone fa-moon-stars" aria-label="Change colour scheme"></i>
           </button>
         </nav>
 
@@ -149,12 +152,12 @@
                 <p class="service-subtitle">Pretty & Powerful</p>
                 <h3>WordPress</h3>
                 <ul>
-                  <li class="built-with">Built with WordPress and Frontity</li>
+                  <li class="built-with">Built with WordPress</li>
                   <li class="good-for">Good for article-based sites like blogs</li>
                   <li class="mobile-responsive">Mobile responsive</li>
                 </ul>
                 <div class="pricing">
-                  <p>Price range: <span><i class="fa-duotone fa-sterling-sign"></i><i class="fa-duotone fa-sterling-sign"></i><i class="fa-duotone fa-sterling-sign"></i></span></p>
+                  <p>Price range: <span><i class="fa-duotone fa-sterling-sign"></i><i class="fa-duotone fa-sterling-sign"></i></span></p>
                   <p>Dev time: <i class="fa-duotone fa-clock"></i><i class="fa-duotone fa-clock"></i> - <i class="fa-duotone fa-clock"></i><i class="fa-duotone fa-clock"></i><i class="fa-duotone fa-clock"></i></p>
                 </div>
                 <a href="#contact">Let's Talk!</a>
@@ -315,12 +318,38 @@
           </section>
 
           <section id="minor-cta">
-            <p class="fade-in from-right">Why settle for a <span>template</span> when you can go <span>bespoke</span>?</p>
+            <p class="fade-in from-right">Why settle for a <span id="template-text">template</span> when you can go <span id="bespoke-text">bespoke</span>?</p>
           </section>
 
           <section id="portfolio">
             <h2>Portfolio</h2>
             <div>
+
+              <div class="project">
+                <img class="preview" src="./assets/fwd-u3a-desktop.ab276735.png" alt="Screenshot of www.frintonwaltonanddistrictu3a.org.uk" />
+                <div>
+                  <h3>Frinton, Walton, and District u3a</h3>
+                  <p>Developed Spring 2023</p>
+                  <p>A site for a u3a district, with information on their groups and events.</p>
+                  <div class="features">
+                    <h4>Features Include</h4>
+                    <ul>
+                      <li>Custom Gutenberg Blocks</li>
+                      <li>Accessibility Tools</li>
+                      <li>Full WordPress Functionality</li>
+                    </ul>
+                  </div>
+                  <p>Built with <br />
+                    <abbr title="PHP"><i class="devicon-php-plain colored"></i></abbr>
+                    <abbr title="Sass"><i class="devicon-sass-original colored"></i></abbr>
+                    <img src="./assets/postcss-original.95f805a1.svg" alt="PostCSS" />
+                    <abbr title="JavaScript"><i class="devicon-javascript-plain colored"></i></abbr>
+                    <abbr title="React"><i class="devicon-react-original colored"></i></abbr>
+                    <abbr title="WordPress.org"><i class="devicon-wordpress-plain"></i></abbr>
+                  </p>
+                  <div><a href="https://frintonwaltonanddistrictu3a.org.uk/" rel="noreferrer" target="_blank">Have a look! <i class="fa-duotone fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
 
               <div class="project">
                 <img class="preview" src="./assets/portfolio-desktop.b9656622.png" alt="Screenshot of www.dramate.co.uk" />
@@ -331,9 +360,9 @@
                   <div class="features">
                     <h4>Features Include</h4>
                     <ul>
-                      <li>Mobile responsive</li>
                       <li>Animations on scroll</li>
                       <li>Light and dark mode</li>
+                      <li>Multilingual</li>
                     </ul>
                   </div>
                   <p>Built with <br />
@@ -573,7 +602,7 @@
           </section>
 
           <footer>
-            <i class="fa-regular fa-copyright"></i> Tabitha Riley 2022
+            <i class="fa-regular fa-copyright"></i> Tabitha Riley 2022-2023
           </footer>
           
         </main>
