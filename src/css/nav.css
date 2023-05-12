@@ -9,9 +9,21 @@
     transition: transform 0.3s;
     font-family: Oxygen;
     font-weight: 300;
+    z-index: 99;
   
     &:focus-within {
         transform: translateY(0%);
+    }
+}
+
+#language-button {
+    height: 2rem;
+    font-size: 1.4rem;
+    padding: auto;
+
+    img {
+        height: 90%;
+        width: auto;
     }
 }
 

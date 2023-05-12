@@ -20,16 +20,18 @@
             width: 12%;
         }
 
-        a {
             img {
                 height: 3rem;
                 margin: 0 .4rem;
                 filter: drop-shadow(1px 1px 2px var(--app-shadow));
             }
-        }
 
         .certificate {
             height: 3rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

@@ -1,3 +1,13 @@
+.lang__ko {
+    #home {
+        &>div:first-of-type {
+            span {
+                line-height: 105%;
+            }
+        }
+    }
+}
+
 #home {
     display: flex;
     align-items: center;
@@ -358,5 +368,13 @@
 @media (prefers-reduced-motion) {
     .animated-icons {
         display: none;
+    }
+
+    #home {
+        &>div:first-of-type {
+            span {
+                animation: none;
+            }
+        }
     }
 }

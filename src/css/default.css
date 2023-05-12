@@ -143,6 +143,10 @@ abbr {
     }
 }
 
+.emoji {
+    font-family: 'Noto Emoji';
+}
+
 @media only screen and (max-width: 700px) {
     body {
         &>#monitor {

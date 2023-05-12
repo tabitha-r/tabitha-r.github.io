@@ -85,7 +85,7 @@
             color: var(--contrast-dark);
             font-weight: 900;
 
-            &:first-of-type {
+            &#template-text {
                 color: var(--app-font-secondary);
             }
         }

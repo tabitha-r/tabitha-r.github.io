@@ -4,6 +4,7 @@
 @import "./nav.css";
 @import "./header.css";
 @import "./animations.css";
+@import "./certificates.css";
 
 @import "./sections/home.css";
 @import "./sections/cta.css";
@@ -12,3 +13,5 @@
 @import "./sections/skills.css";
 @import "./sections/portfolio.css";
 @import "./sections/contact.css";
+
+@import "./icons.css";

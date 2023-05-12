@@ -1,10 +1,14 @@
 import { detectColour, toggleColour } from './ts/colour';
 import { fadeObserver } from './ts/fadeObserver';
 import { randomDelay } from './ts/floatingIcons';
+import { closeCert, certViewSetup } from './ts/certview';
 
 detectColour();
 
 toggleColour(document.querySelector<HTMLButtonElement>('#colour-scheme-button')!);
+
+closeCert(document.querySelector<HTMLButtonElement>('#close-certificate')!);
+certViewSetup();
 
 fadeObserver();
 
