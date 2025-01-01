@@ -1,0 +1,13 @@
+:root {
+    color-scheme: light dark;
+
+    --main-bg-grad-top: light-dark(hsl(220, 13%, 95%), hsl(223, 7%, 30%));
+    --main-bg-grad-bottom: light-dark(hsl(210, 10%, 78%), hsl(216, 7%, 14%));
+    --container-bg: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 6%));
+
+    --logo-dark: light-dark(hsl(40, 100%, 48%), #FFA800);
+    --logo-mid: light-dark(#ffc423, #FFDD35);
+    --logo-light: light-dark(#fde05e, #FFEA83);
+
+    --contrast-text: light-dark(#603E00, #F6C536);
+}

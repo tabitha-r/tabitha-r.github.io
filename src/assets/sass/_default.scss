@@ -1,0 +1,29 @@
+@use './abstracts';
+
+:root {
+    font-size: 18px;
+}
+
+section, header, footer {
+    text-align: center;
+}
+
+body {
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(var(--main-bg-grad-top), var(--main-bg-grad-bottom));
+    overflow: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+
+    p {
+        text-align: center;
+        margin: .8rem auto;
+        font-size: .8rem;
+    }
+}

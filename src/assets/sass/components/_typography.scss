@@ -1,0 +1,17 @@
+@use '../abstracts';
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font), var(--fallback-font-stack);
+}
+
+p, a, ol, ul, li {
+    font-family: var(--body-font), var(--fallback-font-stack);
+}
+
+span {
+    font-family: inherit;
+}
+
+code, pre, pre code {
+    font-family: var(--mono-font), monospace;
+}

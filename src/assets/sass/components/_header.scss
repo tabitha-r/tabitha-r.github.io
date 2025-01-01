@@ -1,0 +1,36 @@
+header {
+    h1 {
+        font-family: var(--heading-font), var(--fallback-font-stack);
+
+        span.main-title {
+            font-size: 5rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+
+            >span {
+                color: var(--contrast-text);
+                font-weight: 900;
+            }
+        }
+        
+        span.h1-subtitle {
+            font-size: 1.6rem;
+            font-weight: 400;
+
+            >span {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        h1 {
+            span.main-title {
+                line-height: 5rem;
+
+            }
+        }
+    }
+}

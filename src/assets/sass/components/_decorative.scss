@@ -1,0 +1,62 @@
+@use 'sass:math';
+
+@for $i from 1 through 16 {
+    div.animated-icons {
+        i:nth-of-type(#{$i}) {
+            animation-duration: (math.random(math.div(35s, 1s)) * 1s) + 15s;
+            animation-delay: math.random(math.div(10s, 1s)) * 1s;
+        }
+    }
+}
+
+@media (prefers-reduced-motion) {
+
+    div.animated-icons {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+div.animated-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .8rem 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    font-size: 3rem;
+
+    color: var(--main-bg-grad-bottom);
+
+    i {
+        opacity: 0;
+        animation-name: floatUp;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(150%) rotate(320deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    40% {
+        transform: translateY(-90vh) rotate(20deg);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
